@@ -7,11 +7,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-  <!-- Fondo animado -->
- <canvas id="animated-bg"></canvas>
 
-  <!-- Sidebar navegación -->
+<body>
+  
   <div class="sidebar">
     <nav>
       <a href="#home">Home</a>
@@ -22,13 +20,23 @@
     </nav>
   </div>
 
-  <!-- Sección principal -->
-  <section class="hero-section" id="home">
-    <h1>Jacky - Freelancer</h1>
-    <p>Building digital solutions with a gamer touch ⚡</p>
-  </section>
 
-  <!-- Secciones -->
+  <section class="hero-section" id="home">
+  <!-- Contenedor para la animación -->
+  <div id="particles-js"></div>
+
+  <!-- Contenedor de imagen y texto -->
+  <div class="hero-content">
+    <div class="hero-image">
+      <img src="img/Imagen de WhatsApp 2025-05-02 a las 02.29.36_8397ea42.jpg" alt="Jacky">
+    </div>
+    <div class="hero-text">
+      <h1>Jacky - Freelancer</h1>
+      <p>Building digital solutions with a gamer touch ⚡</p>
+    </div>
+  </div>
+</section>
+ 
   <section id="about">
     <h2 class="section-title">About Me</h2>
     <div class="card">
@@ -71,6 +79,11 @@
   <footer>
     © 2025 Jacky | Freelancer
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<!-- Tu archivo JS personalizado -->
+<script src="script.js"></script>
 
 </body>
 </html>
